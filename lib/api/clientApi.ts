@@ -90,7 +90,7 @@ export const logout = async (): Promise<void> => {
 };
 
 export const checkSession = async () => {
-  const response = await nextServer.get<CheckSessionRequest>('auth/session');
+  const response = await nextServer.get<CheckSessionRequest>('/auth/session');
   return response.data.success;
 };
 
