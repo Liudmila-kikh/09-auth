@@ -1,5 +1,8 @@
-import Link from "next/link";
-import css from "./Header.module.css";
+// components/Header/Header.tsx';
+import Link from 'next/link';
+import css from './Header.module.css';
+import AuthNavigation from '@/components/AuthNavigation/AuthNavigation';
+
 const Header = () => {
   return (
     <header className={css.header}>
@@ -8,7 +11,7 @@ const Header = () => {
       </Link>
       <nav aria-label="Main Navigation">
         <ul className={css.navigation}>
-           <li className={css.navigationItem}>
+          <li className={css.navigationItem}>
             <Link href="/" className={css.navigationLink}>
               Home
             </Link>
@@ -18,6 +21,7 @@ const Header = () => {
               Notes
             </Link>
           </li>
+          <AuthNavigation />
         </ul>
       </nav>
     </header>
