@@ -8,9 +8,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-module.exports = {
-  images: {
-    domains: ['i.pravatar.cc', 'avatars.githubusercontent.com', 'res.cloudinary.com'],
-  },
-};
